@@ -25,7 +25,7 @@ COPY /app ./app
 
 
 # install renv & restore packages
-RUN R -e 'install.packages("shiny","plotly" ,"dplyr" ,"QuantTools" ,"bit64" ,"pracma" ,"quantmod" ,"data.table" )'
+RUN R -e 'install.packages( c("shiny","plotly" ,"dplyr" ,"QuantTools" ,"bit64" ,"pracma" ,"quantmod" ,"data.table") )'
 
 
 
